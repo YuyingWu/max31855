@@ -145,10 +145,10 @@ if __name__ == "__main__":
 
     # Multi-chip example
     import time
-    cs_pins = [4, 17, 18, 24]
-    clock_pin = 23
-    data_pin = 22
-    units = "f"
+    cs_pins = [24]
+    clock_pin = 25
+    data_pin = 18
+    units = "c"
     thermocouples = []
     for cs_pin in cs_pins:
         thermocouples.append(MAX31855(cs_pin, clock_pin, data_pin, units))
@@ -162,7 +162,8 @@ if __name__ == "__main__":
                 except MAX31855Error as e:
                     tc = "Error: "+ e.value
                     running = False
-                print("tc: {} and rj: {}".format(tc, rj))
+                #print("tc: {} and rj: {}".format(tc, rj))
+                print("{},{}".format(tc, rj))
             time.sleep(1)
         except KeyboardInterrupt:
             running = False
