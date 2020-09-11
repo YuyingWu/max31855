@@ -4,6 +4,10 @@ Requires:
 - The [GPIO Library](https://code.google.com/p/raspberry-gpio-python/) (Already on most Raspberry Pi OS builds)
 - A [Raspberry Pi](http://www.raspberrypi.org/)
 
+## how to connect MAX31855 and RPi
+
+https://cdn-learn.adafruit.com/downloads/pdf/max31855-thermocouple-python-library.pdf
+
 ## Basic use
 
 ```python
